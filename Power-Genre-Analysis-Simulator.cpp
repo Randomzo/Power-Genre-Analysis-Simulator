@@ -4,7 +4,6 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
 // class for the types 
 // Elami is Estako for animals 
 class Elami 
@@ -19,7 +18,7 @@ class Elami
     
     Elami(int hearts, const string& fam, const string& label):
          health(hearts), powerGenre(fam), name(label)  {
-        
+
 }
 };
 /* Each genre will have a unique ability linked to two for balance reasons and a negetive (only when fighting counter )
