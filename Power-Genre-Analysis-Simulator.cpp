@@ -6,6 +6,7 @@
 using namespace std;
 // class for the types 
 // Elami is Estako for animals 
+
 class Elami 
 {
     private:
@@ -14,13 +15,14 @@ class Elami
 
     public:
         int health;
-
     
     Elami(int hearts, const string& fam, const string& label):
-         health(hearts), powerGenre(fam), name(label)  {
+         health(hearts), powerGenre(fam), name(label)  {}
 
-}
+            void print() const{cout<<name<<", "<<health<<", "<<powerGenre<<endl;}
 };
+
+
 /* Each genre will have a unique ability linked to two for balance reasons and a negetive (only when fighting counter )
  fire double damage,
  earth double health,
@@ -31,6 +33,10 @@ water half damage intake,
 
 
 int main () {
+
+    Elami FireElami (100,"fire","Sprada");
+
+    FireElami.print();
 
     return {};
 }
